@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+    padding: 40px 20px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header{
+    margin-bottom: 30px;
+}
+
+header h1{
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header p{
+    color: #666;
+}
+
+.form-section,
+.employee-section{
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.form-section h2,
+.employee-section h2{
+    margin-bottom: 20px;
+}
+
+.form-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label{
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.form-group input:focus,
+.form-group select:focus{
+    outline: none;
+    border-color: #2563eb;
+}
+
+button{
+    margin-top: 20px;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 7px;
+    background: #bcb643;;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #bcb643;
+}
+
+#errorMessage{
+    color: #dc2626;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.section-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-heading p{
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#employeeCount{
+    font-weight: bold;
+    color: #25eb74;
+}
+
+.table-wrapper{
+    overflow-x: auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead{
+    background: #f1f5f9;
+}
+
+th,
+td{
+    text-align: left;
+    padding: 13px;
+    border-bottom: 1px solid #ddd;
+}
+
+th{
+    font-size: 14px;
+}
+
+td{
+    font-size: 14px;
+}
+
+.delete-btn{
+    margin: 0;
+    padding: 7px 12px;
+    background: #bcb643;
+}
+
+.delete-btn:hover{
+    background: #bcb643;
+}
+
+@media (max-width: 700px){
+    .form-grid{
+        grid-template-columns: 1fr;
+    }
+}
